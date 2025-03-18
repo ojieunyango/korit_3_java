@@ -1,4 +1,7 @@
 package ch09_classes;
+
+import java.util.SortedMap;
+
 /*
 생성자 개념(constructor)
    생성자는 객체가 생성될때 호출되는 특별한 메서드
@@ -21,6 +24,7 @@ public class Constructor {
     //필드선언
     int num;
     String name;
+
     //기본생성자 정의-> 직접하면 call1()유형과 같은 형태 [x|x]
     Constructor() {
         System.out.println("NoArgsConstructor(기본생성자)");
@@ -31,4 +35,27 @@ public class Constructor {
         System.out.println("RequiredArgsConstructor(int 매게변수를 필수로 요구하는 생성자)");
         this.num = number; //  this: 해당 클래스에서 객체를 만들게되면 객체이름으로 대체됨. 임시적으로 붙여주는 키워드
     }
-}
+    //String title 을 매개변수로 하는 생성자를 정의하고,
+    //RequiredArgsConstructor(String 매개 변수를 필수로 요구하는 생성자) 라는 안내문을 출력함수있도록 작성한 뒤
+    //ConstructorMain 으로 가셔서 constructor4라는 객체명을 지니고  title에 여러분 이름으로 지어 객체를 생성한 후
+    //System.out.println(constructor4.name)을 입력하여 콘솔에 여러분 이름을 출력하십시요.
+
+    //두개이상의 매개변수를 지니는 생성자
+    Constructor(int num, String name) {
+        this.num = num;
+        this.name = name;
+        System.out.println("AllArgsConstructor(int, String 매개변수 전체를 요구하는 생성자");
+    }
+
+        Constructor(String title) {
+            this.name = title;
+            System.out.println("RequiredArgsConstructor(String 매개변수를 필수로 요구하는 생성자)");
+
+        }
+        // method 정의
+        void showInfo(){
+            System.out.println("이 객체의 num값 : "+num);
+            System.out.println("이 객체의 name값 : "+name);
+        }
+    }
+
