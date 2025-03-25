@@ -23,10 +23,18 @@ public class Arrays01 {
 //            System.out.println(arr3[i]+"");
 
 
-        String[] hello = { "집","에","가","고","싶","어","요"};
-        for (int i = 0; i < hello.length; i++){
-            System.out.print(hello[i]);
-        }
+//
+
+        int [] arr03 = new int[10];
+        arr03[0] = 0;
+
+        arr03[0]=0;
+        arr03[1]=0;
+        arr03[2]=0;
+        arr03[3]=0;
+        arr03[4]=0;
+        arr03[5]=0;
+
         }
 
 
