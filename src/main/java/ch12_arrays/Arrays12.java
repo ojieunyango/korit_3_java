@@ -1,6 +1,9 @@
 package ch12_arrays;
 
+import ch09_classes.Constructor;
+
 import java.util.Arrays;
+import java.util.Comparator;
 
 /*
 여태까지 배운 자바 클래스
@@ -73,4 +76,4 @@ public class Arrays12 {
 }
 
 
-}
+
