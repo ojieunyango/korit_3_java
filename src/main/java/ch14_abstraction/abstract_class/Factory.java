@@ -1,4 +1,4 @@
-package ch14_abstraction_abstract_class;
+package ch14_abstraction.abstract_class;
 
 public abstract class Factory {
 

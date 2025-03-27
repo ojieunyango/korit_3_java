@@ -1,4 +1,4 @@
-package ch14_abstraction_abstract_class;
+package ch14_abstraction.abstract_class;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +14,8 @@ public class Main {
                 System.out.println("가전 제품 공장을 관리합니다.");
 
             }
+
+
         }; // 특이하게 }; 로 마무리되는데 메서드를 정의한게 아니라 객체 생성한거라서 !!!!!!!!!!!
         factory1.displayInfo();
         factory1.produce("백색 가전 냉장고");
@@ -28,5 +30,15 @@ public class Main {
 
         phoneFactory.setName("삼성 스마트폰 공장");
         phoneFactory.displayInfo();
+
+        TableFactory tableFactory1 = new TableFactory("애플 태블릿 공장");
+
+        tableFactory1.setName("구글 태블릿 공장");
+
+        System.out.println("현재 공장은 "+ tableFactory1.getName()+"으로 변경");
+
+        tableFactory1.manage();
+
+        tableFactory1.upgrade("구글 테블릿 10 인치 2세대");
     }
 }
