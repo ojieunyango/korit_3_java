@@ -17,7 +17,9 @@ public abstract class Button implements Press, Up, Down {
     @Override
     public String onUp() {
 
-        return false;
+        return "올립니다.";
+
     }
+
 }
 

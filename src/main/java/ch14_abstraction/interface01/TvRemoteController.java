@@ -9,13 +9,19 @@ public class TvRemoteController {
     private VolumeDownButton volumeUpButton;
 
 
-    public TvRemoteController(PowerButton powerButton, ChannelDownButton channelDownButton, ChannelUpButton channelUpButton) {
+
+    public TvRemoteController(PowerButton powerButton, ChannelDownButton channelDownButton, ChannelUpButton channelUpButton,
+                              VolumeDownButton volumeDownButton, VolumUpButton volumUpButton) {
         this.powerButton = powerButton;
         this.channelDownButton = channelDownButton;
         this.channelUpButton = channelUpButton;
         this.volumeDownButton = volumeDownButton;
         this.volumeUpButton = volumeUpButton;
+
     }
+
+
+
     // 이제 저 필드(객체)들을 이용한 메서드 정의
     public void onPressedPowerButton() {
         powerButton.onPressed();
@@ -46,6 +52,13 @@ public class TvRemoteController {
 
     public void onDownVolumeDownButton() {
         volumeDownButton.onDown();
+    }
+    public void onPressedVolumeUpButton() {
+        volumeUpButton.onPressed();
+    }
+
+    public void onDownVolumeUpButton() {
+        volumeUpButton.onUp();
     }
 
 }
