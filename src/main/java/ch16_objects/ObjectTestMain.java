@@ -15,9 +15,12 @@ public class ObjectTestMain {
         ObjectTest objectTest = new ObjectTest("양지은", "부산광역시 연제구");
         objectTest.displayInfo();
 
-
+        ObjectTest objectTest1 = new ObjectTest();
         objectTest.setName("김일");
         objectTest.setAddress("서울특별시 마포구");
+
+        System.out.println(objectTest1.displayInfo1());
+        System.out.println(objectTest1);
 
     }
 

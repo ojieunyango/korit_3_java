@@ -34,8 +34,8 @@ public class ObjectTest {
         System.out.println("이름: "+name);
         System.out.println("주소: "+ address);
     }
-    void displayInfo1(){
-        return "name: " + name + "address: "+address;
+    String displayInfo1(){
+        return "name: " + name + "\n address: "+address;
 
     }
 

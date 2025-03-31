@@ -5,8 +5,8 @@ import ch16_objects.Teacher;
 import java.util.Objects;
 
 public class Teacher01 {
-    public Teacher01() {
-    }
+  private String name;
+  private String schoolName;
 
     public Teacher01(String name, String schoolName) {
         this.name = name;
@@ -36,8 +36,9 @@ public class Teacher01 {
 
     @Override
     public boolean equals(Object o) {
-        if (!(o instanceof Teacher01 teacher)) return false;
-        return Objects.equals(name, teacher.name) && Objects.equals(schoolName, teacher.schoolName);
+        if (o==null || getClass() != o.getClass()) return false;
+        Teacher01 teacher01 = (Teacher01) o;
+        return Objects.equals(name, teacher01.name) && Objects.equals(schoolName, teacher01.schoolName);
     }
 
     @Override
@@ -45,4 +46,4 @@ public class Teacher01 {
         return Objects.hash(name, schoolName);
     }
 }
-}
+
