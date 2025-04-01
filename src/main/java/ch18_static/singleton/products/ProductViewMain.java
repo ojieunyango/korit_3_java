@@ -14,5 +14,6 @@ public class ProductViewMain {
         // 코드를 자세히 봤다면 생성자 내부의 int counter가 지역변수이기 때문에 한번만 출력되었다는 것은 생성자 호출자체가 한번만 있었다는 의미
         productView1.showMainView();
         productView2.showMainView();
+        productView2.showOrderView();
     }
 }
